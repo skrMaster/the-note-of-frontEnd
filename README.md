@@ -1,4 +1,16 @@
-# (一)、CSS3相关
+# (一)、插件相关
+
+| 插件名称            | 插件作用                              | 插件文档地址                                                 |
+| ------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| html2canvas         | 将html元素绘制成图片,制作html网页快照 | https://html2canvas.hertzen.com/                             |
+| vue-excel-xlsx      | 前端导出成excel表                     | https://github.com/t-chatoyan/vue-excel-xlsx#readme          |
+| vue-echarts         | Apache ECharts 的 Vue.js 组件         | https://github.com/ecomfe/vue-echarts/blob/HEAD/README.zh-Hans.md |
+| vue-seamless-scroll | vue无缝滚动组件                       | https://chenxuan0000.github.io/vue-seamless-scroll/          |
+| postcss-px2rem      | px转rem                               | https://github.com/songsiqi/px2rem-postcss                   |
+| vue-baidu-map       | 百度地图的vue.js组件                  | https://dafrok.github.io/vue-baidu-map/                      |
+| vue-awesome-swiper  | 一种swiper的Vue.js组件                | https://github.surmon.me/vue-awesome-swiper/                 |
+| lru**-**cache       | 删除最近使用最少的项的缓存对象        | https://github.com/isaacs/node-lru-cache#readme              |
+# (二)、CSS3相关
 
 ### 1、border-collapse
 
@@ -573,7 +585,7 @@ button {
 
 
 
-# （二）浏览器相关
+# （三）浏览器相关
 
 ### 1、Browser core(渲染引擎)
 
