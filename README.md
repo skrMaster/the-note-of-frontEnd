@@ -10,6 +10,7 @@
 | vue-baidu-map       | 百度地图的vue.js组件                  | https://dafrok.github.io/vue-baidu-map/                      |
 | vue-awesome-swiper  | 一种swiper的Vue.js组件                | https://github.surmon.me/vue-awesome-swiper/                 |
 | lru-cache           | 删除最近使用最少的项的缓存对象        | https://github.com/isaacs/node-lru-cache#readme              |
+| compressorjs        | 图片压缩                              | https://fengyuanchen.github.io/compressorjs/                 |
 # (二)、CSS3相关
 
 ### 1、border-collapse
