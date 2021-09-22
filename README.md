@@ -599,3 +599,29 @@ button {
     -   排版渲染引擎
     -   JavaScript引擎
     -   ···
+
+# （四）坑
+
+### 4.1 关于在vue2的单页面应用中使用echarts
+
+-   一个页面
+
+    -   多个组件
+
+        -   每个组件都使用了eharts图表
+
+        -   echarts会默认使用CanvasRenderer
+
+        -   若其中有一个组件设置了渲染方式为SVGRenderer，修改无效
+
+        -   要改就全部都改为SVGRenderer
+
+            -   >   -d
+                >
+                >   "echarts": "^5.1.2"
+                >
+                >   "vue-echarts": "^6.0.0"
+                >
+                >   --dev d
+                >
+                >   "@vue/composition-api": "^1.1.1"
