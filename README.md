@@ -626,3 +626,8 @@ button {
                 >   --dev d
                 >
                 >   "@vue/composition-api": "^1.1.1"
+
+### 4.2 在uni-app中获取节点信息
+
+-   内置组件如`<view>, <text> ...`
+    -   使用`uni.createSelectorQuery()`返回一个 SelectorQuery 对象实例，详情见[uni-app官网](https://uniapp.dcloud.io/api/ui/nodes-info)
