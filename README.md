@@ -626,3 +626,29 @@ button {
                 >   --dev d
                 >
                 >   "@vue/composition-api": "^1.1.1"
+
+# （五）TS学习
+
+### 5.1 帮助类型
+
+- Omit<K,T>类型让我们可以从另一个对象类型中剔除某些属性，并创建一个新的对象类型：
+  K：是对象类型名称，T：是剔除K类型中的属性名称
+
+  - ```tsx
+    type UserProps = {
+        name?:string
+        age?:number
+        sex?:string
+    }
+    //去掉sex属性
+    type NewUserProps = Omit<UserPoops, 'sex'>
+    //等同于
+    type NewUserProps = {
+        name?:string
+        age?:number
+    }
+    ```
+
+    
+    
+
