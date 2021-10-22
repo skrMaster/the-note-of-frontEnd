@@ -586,7 +586,7 @@ button {
 
 
 
-# （三）浏览器相关
+# (三)、浏览器相关
 
 ### 1、Browser core(渲染引擎)
 
@@ -601,7 +601,7 @@ button {
     -   JavaScript引擎
     -   ···
 
-# （四）坑
+# (四)、坑
 
 ### 4.1 关于在vue2的单页面应用中使用echarts
 
@@ -627,28 +627,29 @@ button {
                 >
                 >   "@vue/composition-api": "^1.1.1"
 
-# （五）TS学习
+### 4.2 在uni-app中获取节点信息
 
-### 5.1 帮助类型
+-   内置组件如`<view>, <text> ...`
+    -   使用`uni.createSelectorQuery()`返回一个 SelectorQuery 对象实例，详情见[uni-app官网](https://uniapp.dcloud.io/api/ui/nodes-info)
 
-- Omit<K,T>类型让我们可以从另一个对象类型中剔除某些属性，并创建一个新的对象类型：
-  K：是对象类型名称，T：是剔除K类型中的属性名称
+# (五)、TypeScript
 
-  - ```tsx
-    type UserProps = {
-        name?:string
-        age?:number
-        sex?:string
-    }
-    //去掉sex属性
-    type NewUserProps = Omit<UserPoops, 'sex'>
-    //等同于
-    type NewUserProps = {
-        name?:string
-        age?:number
-    }
-    ```
+### 5.1 关键字
 
-    
-    
 
+
+### 5.2 帮助类型
+
+>   https://www.typescriptlang.org/docs/handbook/utility-types.html 官网
+
+| 类型             | 作用                       |
+| ---------------- | -------------------------- |
+| Partial\<Type\>  | Type中的所有属性都是可选的 |
+| Required\<Type\> | Type中的所有属性都是必需的 |
+| Readonly\<Type\> | Type中的类型只能读         |
+|                  |                            |
+|                  |                            |
+|                  |                            |
+|                  |                            |
+|                  |                            |
+|                  |                            |
