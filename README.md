@@ -640,16 +640,22 @@ button {
 
 ### 5.2 帮助类型
 
->   https://www.typescriptlang.org/docs/handbook/utility-types.html 官网
+>   [TypeScript官方网站](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
-| 类型             | 作用                       |
-| ---------------- | -------------------------- |
-| Partial\<Type\>  | Type中的所有属性都是可选的 |
-| Required\<Type\> | Type中的所有属性都是必需的 |
-| Readonly\<Type\> | Type中的类型只能读         |
-|                  |                            |
-|                  |                            |
-|                  |                            |
-|                  |                            |
-|                  |                            |
-|                  |                            |
+| 类型                          | 作用                                             |
+| ----------------------------- | ------------------------------------------------ |
+| Partial\<Type\>               | Type中的所有属性都是可选的                       |
+| Required\<Type\>              | Type中的所有属性都是必需的                       |
+| Readonly\<Type\>              | Type中的类型只能读                               |
+| Record<Keys, Type>            | 将类型Keys作为key，将Type作为value，进行类型推断 |
+| Pick<Type, Keys>              | 将类型Keys从Type中挑选出来                       |
+| Omit<Type, Keys>              | 将类型Keys从Type中剔除                           |
+| Exclude<Type, ExcludedUnion>  | Type类型，ExcludedUnion类型 得到差集             |
+| Extract<Type, Union>          | Type类型，Union类型 得到交集                     |
+| NonNullable\<Type\>           | 通过从类型中排除null和undefined来构造类型        |
+| Parameters\<Type\>            | 将传入Type函数参数作为元组元素                   |
+| ConstructorParameters\<Type\> | 将Type中的类型构造元组类型                       |
+| ReturnType\<Type\>            | 构造由函数的返回类型组成的类型 Type为函数        |
+| InstanceType\<Type\>          | 构造由类型中构造函数的实例类型组成的类型         |
+
+…
