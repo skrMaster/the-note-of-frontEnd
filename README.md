@@ -11,22 +11,29 @@
 | vue-awesome-swiper  | 一种swiper的Vue.js组件                | https://github.surmon.me/vue-awesome-swiper/                 |
 | lru-cache           | 删除最近使用最少的项的缓存对象        | https://github.com/isaacs/node-lru-cache#readme              |
 | compressorjs        | 图片压缩                              | https://fengyuanchen.github.io/compressorjs/                 |
-# (二)、CSS3相关
+| 名称       | 网站                   | 作用            |
+| ---------- | ---------------------- | --------------- |
+| Greensock  | https://greensock.com/ | JS实现的svg动画 |
+| velocityJS | http://velocityjs.org/ | JS实现的svg动画 |
+| snap.svg   | http://snapsvg.io/     | JS实现的svg动画 |
+
+
+
+# (二)、CSS相关
 
 ### 1、border-collapse
 
 >-   collapse——合并模式共享边框。
->
 >-   separate——分隔模式相邻的单元格有独立的边框。
->
->       ```css
->   /*
->    *当border-collapse: separate;时
->    *可以使用border-spacing，调整边框的间距
->    */
->    border-spacing: length/inherit;
->    horizontal <length> | vertical <length>
->     ```
+
+```css
+/*
+ *当border-collapse: separate;时
+ *可以使用border-spacing，调整边框的间距
+ */
+ border-spacing: length/inherit;
+ horizontal <length> | vertical <length>
+```
 
 ### 2、图像精灵
 
@@ -142,7 +149,8 @@ transition-timing-function 属性可接受以下值：
 
 ### 9、导航栏 = 链接列表
 
->   ```<ul><li><a></a></li></ul>```
+- HTML5推荐使用`<nav><a></a></nav>`
+- ```<ul><li><a></a></li></ul>```	
 
 ### 10、CSS 属性选择器
 
@@ -581,10 +589,51 @@ button {
     }
     ```
 
--	grid-area：grid-row-start、grid-column-start、grid-row-end 和 grid-column-end 属性的简写属性。
+- grid-area：grid-row-start、grid-column-start、grid-row-end 和 grid-column-end 属性的简写属性。
 
+### 25、响应式图片
 
+1. 通过srcset切换分辨率-img属性
 
+   ```html
+   <img src="example.jpg" srcset="example.jpg 1.5x, example.jpg 2.0x" alt="tip" />
+   ```
+
+2. srcset和sizes联合切换-img属性
+
+   ```html
+   <img srcset="example.jpg 450w, example.jpg 900w" sizes="(min-width: 17em) 100vw, (min-width: 40em) 50vw" src="example.jpg" alt="tip"/>
+   ```
+
+3. picture标签
+
+   ```html
+   <picture>
+   	<source media="(min-width: 30em)" srcset="example.jpg" />
+   	<source media="(min-width: 30em)" srcset="example.jpg" />
+       <img src="example.jpg" alt="tip" />
+   </picture>
+   ```
+
+### 26、内联svg样式
+
+```html
+<svg height="" width="" viewport="">
+    <style type="text/css">
+        <!CDATA[
+        	#...
+       		....
+        	@keyframes ...
+        ]]>
+    </style>
+</svg>
+```
+
+### 27、Flexbox
+
+- inlink-block: 会在html元素间渲染空白
+- 浮动: 当设置百分比时平台差异很明显,需频繁清除浮动
+- display: table/table-cell不会真正影响HTML的结构
 
 # (三)、浏览器相关
 
@@ -636,7 +685,8 @@ button {
 
 ### 5.1 关键字
 
-
+1. typeof
+2. keyof
 
 ### 5.2 帮助类型
 
