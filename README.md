@@ -1,5 +1,7 @@
 # (一)、插件相关
 
+- npm包引入
+
 | 插件名称            | 插件作用                              | 插件文档地址                                                 |
 | ------------------- | ------------------------------------- | ------------------------------------------------------------ |
 | html2canvas         | 将html元素绘制成图片,制作html网页快照 | https://html2canvas.hertzen.com/                             |
@@ -11,6 +13,9 @@
 | vue-awesome-swiper  | 一种swiper的Vue.js组件                | https://github.surmon.me/vue-awesome-swiper/                 |
 | lru-cache           | 删除最近使用最少的项的缓存对象        | https://github.com/isaacs/node-lru-cache#readme              |
 | compressorjs        | 图片压缩                              | https://fengyuanchen.github.io/compressorjs/                 |
+
+- 自行引入
+
 | 名称       | 网站                   | 作用            |
 | ---------- | ---------------------- | --------------- |
 | Greensock  | https://greensock.com/ | JS实现的svg动画 |
