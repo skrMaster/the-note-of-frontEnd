@@ -640,6 +640,16 @@ button {
 - 浮动: 当设置百分比时平台差异很明显,需频繁清除浮动
 - display: table/table-cell不会真正影响HTML的结构
 
+### 28、font-family组合参考
+
+| 字体类型 |                           组合写法                           |
+| -------- | :----------------------------------------------------------: |
+| 英文     |        "Helvetica Neue", Helvetica, Arial, sans-serif        |
+| 中文     | "PingFang SC", "Hiragino Sans GB", STXihei, "Microsoft Yahei", SimSun, Simhei |
+| 中英文   | -apple-system, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, "Microsoft YaHei", "WenQuanYi Micoro Hei", sans-serif. |
+
+
+
 # (三)、浏览器相关
 
 ### 1、Browser core(渲染引擎)
@@ -714,3 +724,26 @@ button {
 | InstanceType\<Type\>          | 构造由类型中构造函数的实例类型组成的类型         |
 
 …
+
+# (六)、UI设计
+
+### 6.1 色彩
+
+- 无色系---黑白灰
+
+  - 西方文化的色彩内涵
+
+    | 色彩名 |                             内涵                             |
+    | :----: | :----------------------------------------------------------: |
+    |  红色  |          刺激, 激励, 饥饿, 愤怒, 暴力, 血液, 生物学          |
+    |  橙色  |            活力, 友好, 冒险, 奢侈, 质量, 异国情调            |
+    |  棕色  |        泥土, 树木, 舒适, 永恒, 价值, 粗糙, 勤劳, 耐用        |
+    |  黄色  | 太阳, 热, 快乐, <span style="color: yellow">财富</span>, 清晰, 能量, 警戒 |
+    |  绿色  |        自然, 生长, 能量, 安全, 新鲜, 质朴, 毒性, 疾病        |
+    |  蓝色  |            水, 天空, 平静, 安宁, 可靠, 智慧, 灵性            |
+    |  紫色  | 神秘, 妥协, <span style="color: purple">财富</span>, 怀旧, 戏剧, 魔力 |
+    |  白色  |        权威, 纯粹, 清晰, 全知, 整体, 灵性, 静止, 安宁        |
+    |  灰色  | 正式, 典雅, 冷淡, 不可捉摸, 华贵, 技术, 精确, 控制, 能力, 不确定 |
+    |  黑色  | 不可知, 支配性, 虚无, 外部空间, 夜晚, 死亡, 唯一性, 优势, 尊严 |
+
+    
